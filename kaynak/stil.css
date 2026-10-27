@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #263b34; background: #f7f8f4; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, textarea { font: inherit; }
+button, a, input, textarea { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+button:disabled, fieldset:disabled { cursor: not-allowed; opacity: .65; }
+button, input, textarea { transition: border-color .15s, background .15s; }
+:focus-visible { outline: 3px solid #b47c27; outline-offset: 4px; }
+.sayfa { max-width: 1200px; padding: 0 48px; margin: auto; }
+.ust-cubuk { display: flex; align-items: center; justify-content: space-between; height: 104px; border-bottom: 1px solid #dfe5dd; }
+.marka { display: flex; align-items: center; font-family: Manrope, sans-serif; font-size: 23px; font-weight: 800; letter-spacing: -1px; color: #263b34; text-decoration: none; }
+.marka-simgesi { background: #235b49; color: white; border-radius: 11px; width: 36px; height: 36px; display: grid; place-items: center; margin-right: 12px; font-size: 24px; }
+.marka-noktasi { color: #ab7536; }
+.ust-not, .etiket, .bolum-no { font-size: 10px; letter-spacing: 1.8px; font-weight: 700; color: #65776b; }
+.giris { display: flex; justify-content: space-between; align-items: center; padding: 47px 0 31px; gap: 20px; }
+.etiket { color: #47705a; margin: 0 0 13px; }
+h1, h2, h3 { font-family: Manrope, sans-serif; }
+h1 { font-size: clamp(28px, 3.4vw, 42px); line-height: 1.2; letter-spacing: -1.7px; margin: 0 0 14px; font-weight: 800; }
+.aciklama { color: #6b786f; font-size: 14px; margin: 0; line-height: 1.7; }
+.tarih-notu { display: flex; gap: 15px; align-items: center; transform: rotate(-3deg); background: #efeddb; border: 1px solid #e5e2cb; padding: 14px 24px; border-radius: 3px; }
+.tarih-notu > span { font-size: 33px; color: #94743c; }
+.tarih-notu p { font-size: 12px; line-height: 1.9; color: #78694b; }
+.ozet { display: grid; grid-template-columns: 1fr 1fr 1fr 1.4fr; background: white; border: 1px solid #e1e6de; border-radius: 12px; padding: 25px 0; }
+.ozet > div { padding: 0 30px; border-right: 1px solid #e7ebe5; }
+.ozet > div:last-child { border: 0; }
+.ozet span { display: block; color: #6b786f; font-size: 12px; }
+.ozet strong { display: block; font-family: Manrope, sans-serif; font-size: 30px; margin-top: 7px; font-weight: 700; }
+.ozet .yesil { color: #2f7658; }
+.ilerleme { align-self: center; }
+.ilerleme span { display: flex; justify-content: space-between; }
+.ilerleme b { color: #235b49; }
+progress { width: 100%; height: 7px; border: 0; border-radius: 10px; overflow: hidden; background: #e9eee7; margin-top: 15px; accent-color: #235b49; }
+progress::-webkit-progress-bar { background: #e9eee7; }
+progress::-webkit-progress-value { background: #235b49; }
+progress::-moz-progress-bar { background: #235b49; }
+.bildirim { min-height: 19px; margin: 10px 0; font-size: 12px; color: #235b49; }
+.hata { background: #fff0eb; border: 1px solid #e6b7a7; padding: 15px; border-radius: 8px; color: #8e342a; font-size: 14px; }
+.calisma-alani { display: grid; grid-template-columns: 340px 1fr; gap: 34px; align-items: start; }
+.form-karti { background: white; border: 1px solid #e1e6de; border-radius: 12px; padding: 27px; }
+h2 { font-size: 21px; margin: 10px 0; letter-spacing: -.7px; }
+.form-karti > p { font-size: 12px; color: #788278; margin: 0 0 25px; }
+fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 9px; }
+label > span { color: #9b632d; }
+label small { color: #7b857e; font-size: 10px; font-weight: 400; float: right; }
+input:not([type=checkbox]), textarea { width: 100%; border: 1px solid #dce3d9; background: #fcfdfa; border-radius: 7px; padding: 12px; font-size: 12px; color: #263b34; margin-bottom: 21px; }
+input::placeholder, textarea::placeholder { color: #7c877e; }
+textarea { resize: vertical; min-height: 105px; line-height: 1.7; }
+.ana-buton { display: flex; align-items: center; justify-content: space-between; width: 100%; background: #235b49; color: white; border: 0; padding: 13px 17px; border-radius: 7px; font-size: 13px; font-weight: 600; }
+.ana-buton:hover { background: #184332; }
+.ana-buton span { font-size: 21px; line-height: 1; }
+.vazgec { background: none; border: 0; color: #596c60; width: 100%; margin-top: 15px; font-size: 12px; }
+.depo-notu { margin-top: 23px; padding-top: 17px; border-top: 1px solid #edf0e9; font-size: 10px; color: #748075; display: flex; gap: 8px; }
+.reset-buton { width: 100%; margin-top: 16px; padding: 10px; border: 1px solid #dce3d9; border-radius: 7px; background: #f7f8f4; color: #48634f; font-size: 11px; }
+.reset-buton:hover { background: #e7eee2; }
+.liste-baslik { display: flex; align-items: center; justify-content: space-between; padding-top: 4px; }
+.liste-baslik h2 { display: flex; align-items: center; gap: 10px; }
+.liste-baslik h2 span { display: inline-grid; place-items: center; font-family: 'DM Sans', sans-serif; font-size: 11px; background: #e7ece2; border-radius: 6px; min-width: 25px; height: 23px; }
+.liste-notu { font-size: 11px; color: #7a847c; }
+.filtreler { display: flex; gap: 6px; border-bottom: 1px solid #dfe5dd; padding: 13px 0 17px; margin-bottom: 17px; }
+.filtreler button { padding: 8px 14px; border: 1px solid transparent; background: transparent; border-radius: 6px; color: #6b786f; font-size: 12px; }
+.filtreler button[aria-pressed=true] { background: #e7eee2; color: #235b49; font-weight: 700; }
+.filtreler button:hover { border-color: #b4c5b5; }
+.gorevler { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.gorev { display: flex; gap: 17px; background: white; border: 1px solid #e1e6de; border-radius: 9px; padding: 21px; }
+.onay { appearance: none; flex-shrink: 0; width: 21px; height: 21px; border: 1.5px solid #bccabd; border-radius: 6px; margin: 2px 0 0; cursor: pointer; display: grid; place-items: center; }
+.onay:checked { background: #235b49; border-color: #235b49; }
+.onay:checked::after { content: '✓'; font-size: 15px; color: white; }
+.gorev-icerigi { min-width: 0; flex: 1; }
+.durum { font-size: 8px; letter-spacing: 1px; font-weight: 700; color: #91743c; }
+.gorev h3 { font-size: 14px; margin: 7px 0; overflow-wrap: anywhere; line-height: 1.6; }
+.gorev p { font-size: 12px; color: #748075; margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.7; }
+.tamamlandi { background: #f0f4ed; }
+.tamamlandi h3 { text-decoration: line-through; color: #6a7c6d; }
+.tamamlandi .durum { color: #3e7456; }
+.islemler { display: flex; gap: 15px; margin-top: 14px; }
+.islemler button { border: 0; background: transparent; padding: 0; font-size: 11px; color: #48634f; }
+.islemler .sil { color: #99574e; }
+.islemler button:hover { text-decoration: underline; }
+.bos-liste { text-align: center; padding: 66px 25px; border: 1px dashed #ced9ca; border-radius: 10px; }
+.bos-liste > span { display: inline-grid; place-items: center; background: #e7eee2; width: 45px; height: 45px; border-radius: 50%; color: #527250; font-size: 24px; }
+.bos-liste h3 { font-size: 17px; margin: 17px 0 10px; }
+.bos-liste p { font-size: 12px; color: #748075; line-height: 1.8; }
+footer { margin-top: 55px; border-top: 1px solid #dfe5dd; padding: 24px 0; display: flex; justify-content: space-between; font-size: 11px; color: #768274; }
+footer span:first-child { font-weight: 700; }
+@media (max-width: 800px) {
+  .sayfa { padding: 0 24px; }
+  .ust-not, .tarih-notu, .liste-notu { display: none; }
+  .ust-cubuk { height: 80px; }
+  .giris { padding-top: 32px; }
+  .calisma-alani { grid-template-columns: 1fr; gap: 30px; }
+  .ozet { grid-template-columns: repeat(3, 1fr); padding: 20px 0; }
+  .ozet > div { padding: 0 18px; }
+  .ozet > div:nth-child(3) { border: 0; }
+  .ozet > .ilerleme { grid-column: 1 / -1; margin-top: 22px; }
+  .ozet strong { font-size: 26px; }
+  .ozet span { font-size: 11px; }
+  h1 { letter-spacing: -1px; }
+  footer { margin-top: 35px; }
+}
