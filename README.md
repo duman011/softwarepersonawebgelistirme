@@ -2,6 +2,8 @@
 
 Staj görevlerini planlamak ve ilerlemeyi takip etmek için React ile geliştirilmiş görev takip uygulaması.
 
+**[Canlı siteyi aç → stajdefterim.netlify.app](https://stajdefterim.netlify.app/)**
+
 ![Staj Defterim — masaüstü görünümü](belgeler/ekran-goruntusu.png)
 
 ## Özellikler
