@@ -29,7 +29,10 @@ Terminalde gösterilen yerel adresi tarayıcıda açın.
 
 ## Mobil görünüm
 
-<img src="belgeler/mobil-ekran-goruntusu.png" alt="Staj Defterim — mobil görünüm" width="320" />
+<p>
+  <img src="belgeler/mobil-ana-ekran.png" alt="Staj Defterim — mobil ana ekran" width="320" />
+  <img src="belgeler/mobil-gorevler.png" alt="Staj Defterim — mobil görev listesi" width="320" />
+</p>
 
 ## Kullanılan teknolojiler
 

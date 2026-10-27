@@ -58,7 +58,7 @@ test('bozuk kayıt üzerine yazılmaz', async ({ page: sayfa }) => {
   expect(await sayfa.evaluate(() => localStorage.getItem('staj-defterim-gorevler'))).toBe('bozuk kayıt');
 });
 
-test('masaüstü ve mobil ekran görüntüleri', async ({ page: sayfa }) => {
+test('masaüstü ekran görüntüsü ve mobil görünüm', async ({ page: sayfa }) => {
   await sayfa.setViewportSize({ width: 1440, height: 1080 });
   await sayfa.goto('/');
   await sayfa.evaluate(() => document.fonts.ready);
@@ -66,7 +66,6 @@ test('masaüstü ve mobil ekran görüntüleri', async ({ page: sayfa }) => {
   await sayfa.setViewportSize({ width: 390, height: 844 });
   expect(await sayfa.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await expect(sayfa.getByRole('button', { name: 'Görev ekle' })).toBeVisible();
-  await sayfa.screenshot({ path: 'belgeler/mobil-ekran-goruntusu.png', fullPage: true });
 });
 
 test('örnek görevler düzenlenebilir; Reset onayı, form ve filtreyi başlangıca döndürür', async ({ page: sayfa }) => {
